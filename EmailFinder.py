@@ -1,7 +1,7 @@
 import pandas as pd
 
-file1 = pd.read_csv('EmailList(1).csv') #sets file1 to the first csv file containing the emails of all profiles
-file2 = pd.read_csv('VolunteerList.csv') #sets file2 to the second csv file containing the list of available volunteer information
+file1 = pd.read_csv('speciallist1.csv') #sets file1 to the first csv file containing the emails of all profiles
+file2 = pd.read_csv('speciallist2.csv') #sets file2 to the second csv file containing the list of available volunteer information
 
 emails_file1 = set(file1['textBox1'].str.lower().str.strip()) #cleans the file by removing all whitespace and converting all emails to lowercase 
 emails_file2 = set(file2['email '].str.lower().str.strip()) #cleans the file by removing all whitespace and changing the email column to lowercase. 
